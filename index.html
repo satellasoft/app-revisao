@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Revisão</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+</head>
+
+<body>
+    <section class="max-width container">
+        <h1>App Revisão</h1>
+        <br>
+        <div class="grid-50 mobile-grid-100">
+            <h2>Entrada</h2>
+
+            <form id="frmCalcular">
+                <label for="txtValorLauda">Valor da lauda: <span class='btn-circle' onclick="help(this)"
+                        data-help="Informe o valor cobrado. Não use vírgula, utilize ponto.">?</span></label>
+                <input type="text" id="txtValorLauda" placeholder="9.99">
+
+                <label for="txtQuantidadeLauda">Quantidade por lauda: <span class='btn-circle' onclick="help(this)"
+                        data-help="Informe o número de caracteres correspondente a uma lauda.">?</span></label>
+                <input type="text" id="txtQuantidadeLauda" placeholder="1500">
+
+                <hr>
+
+                <label for="txQuantidadeCaracteres">Quantidade de caracteres: <span class='btn-circle'
+                        onclick="help(this)"
+                        data-help="Informe a quantidade de caracteres a serem revisados.">?</span></label>
+                <input type="text" id="txQuantidadeCaracteres" placeholder="1500">
+
+                <div class="text-right">
+                    <input type="button" id="btnShowContador" value="Contador de caracteres" class="btn-contador"
+                        onclick="abrirContador();">
+                    <input type="submit" id="btnCalcular" value="Calcular" class="btn">
+                </div>
+                <br>
+            </form>
+        </div>
+
+        <div class="grid-50 mobile-grid-100 bg">
+            <h2>Saída</h2>
+
+            <p>Valor da lauda: <span id="spValorLauda">00</span></p>
+            <p>Quantidade caracteres por lauda: <span id="spQuantidadeLauda">00</span></p>
+            <p>Quantidade total de caracteres: <span id="spQuantidadeCaracteres">00</span></p>
+
+            <h2 class="text-center">Valor do trabalho: <span id="spValorTrabalho" class="red">00</span></h2>
+
+        </div>
+
+        <div class="clearfix"></div>
+    </section>
+
+    <div id="modal">
+        <div id="modal-content">
+            <h2>Contador de caracteres</h2>
+            <p>Cole seu texto no formulário abaixo.</p>
+            <textarea name="" rows="15" id="txtContadorCaracteres"></textarea>
+
+            <div class="text-right">
+                <label style="font-weight: normal; display: inline; color: #FFF;"><input type="checkbox" value='s'
+                        id='ckContarEspaco' checked> Contar espaço em branco</label>
+                <button class="btn-contador" style="margin-right: 10px" onclick="limpar();">Limpar</button>
+                <button class="btn-contador" onclick="contarTextos();">Calcular</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
