@@ -6,6 +6,8 @@
 
 Acesse a versão web disponível em https://satellasoft.github.io/app-revisao.
 
+Playlist de aulas https://www.youtube.com/watch?v=OAxrlLUmjsM&list=PLuJ48A-nezodOIZcYL-32aKO-omPi3Tgf.
+
 > No campo **Valor da lauda**, insira o valor cobrado por lauda. Atenção, usar .(ponto) ao invés de , (vírgula).
 
 > No campo  **Quantidade por lauda**, insira a quantidade de caracteres considerados uma lauda.
